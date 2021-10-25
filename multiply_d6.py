@@ -9,10 +9,8 @@ die_1 = Die()
 die_2 = Die()
 
 # Making some rolls and adding the results to the list.
-results = []
-for roll_num in range(1000):
-    result = die_1.roll() * die_2.roll()
-    results.append(result)
+results = [die_1.roll() * die_2.roll() for roll_num in range(1000)]
+
 
 # Results analysis.
 frequencies = []
